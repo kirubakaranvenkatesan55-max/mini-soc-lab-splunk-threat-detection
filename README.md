@@ -1,60 +1,133 @@
-# Mini SOC Lab: Splunk Threat Detection Projects
 
-This repository contains 7 hands-on projects for analyzing various network logs using Splunk SIEM. Each project focuses on a different protocol or log type, helping you understand threat detection in a Security Operations Center (SOC) environment.
+# 🛡️ Mini SOC Lab: Splunk Threat Detection
 
-## Visual Overview of Each Project
+Welcome to the **Mini SOC Lab**! This repository features 7 practical projects for analyzing different network logs using Splunk SIEM, designed to build your skills in threat detection and incident response.
+
+---
+
+## 🚀 Projects Overview
+
+| # | Project | Focus | Visual Flow |
+|---|---------|-------|-------------|
+| 1 | [Analyzing DNS Logs](#1-analyzing-dns-logs) | Detecting malicious domains | ![DNS](https://img.icons8.com/color/48/000000/domain.png) |
+| 2 | [Analyzing FTP Logs](#2-analyzing-ftp-logs) | Suspicious file transfers | ![FTP](https://img.icons8.com/color/48/000000/ftp.png) |
+| 3 | [Analyzing HTTP Logs](#3-analyzing-http-logs) | Web attack detection | ![HTTP](https://img.icons8.com/color/48/000000/web.png) |
+| 4 | [Analyzing SSH Logs](#4-analyzing-ssh-logs) | Brute force & unauthorized access | ![SSH](https://img.icons8.com/color/48/000000/console.png) |
+| 5 | [Analyzing Tunnel Logs](#5-analyzing-tunnel-logs) | VPN/tunnel anomalies | ![VPN](https://img.icons8.com/color/48/000000/vpn.png) |
+| 6 | [Analyzing SMTP Logs](#6-analyzing-smtp-logs) | Phishing & spam | ![SMTP](https://img.icons8.com/color/48/000000/send-mass-email.png) |
+| 7 | [Analyzing DHCP Logs](#7-analyzing-dhcp-logs) | Rogue device detection | ![DHCP](https://img.icons8.com/color/48/000000/network-card.png) |
+
+---
+
+## 📚 Table of Contents
+
+1. [Project 1: DNS Logs](#1-analyzing-dns-logs)
+2. [Project 2: FTP Logs](#2-analyzing-ftp-logs)
+3. [Project 3: HTTP Logs](#3-analyzing-http-logs)
+4. [Project 4: SSH Logs](#4-analyzing-ssh-logs)
+5. [Project 5: Tunnel Logs](#5-analyzing-tunnel-logs)
+6. [Project 6: SMTP Logs](#6-analyzing-smtp-logs)
+7. [Project 7: DHCP Logs](#7-analyzing-dhcp-logs)
+
+---
+
+## 📝 Project Details
 
 ### 1. Analyzing DNS Logs
-**Visual:**
+**Goal:** Detect suspicious/malicious domain queries.
+
+**Flow:**
 ```
-User → DNS Query → DNS Server → Splunk Log Collection → Threat Detection
+User → DNS Query → DNS Server → Splunk → Threat Detection
 ```
 **Reference:** [Splunk DNS Analytics](https://www.splunk.com/en_us/blog/security/dns-analytics-for-threat-detection.html)
 
+---
+
 ### 2. Analyzing FTP Logs
-**Visual:**
+**Goal:** Identify unauthorized file transfers and brute force attempts.
+
+**Flow:**
 ```
-User ↔ FTP Server (Login/Upload/Download) → Splunk Log Collection → Suspicious Activity Detection
+User ↔ FTP Server → Splunk → Suspicious Activity Detection
 ```
 **Reference:** [Splunk FTP Log Analysis](https://community.splunk.com/t5/Security/FTP-log-analysis-in-Splunk/m-p/527839)
 
+---
+
 ### 3. Analyzing HTTP Logs
-**Visual:**
+**Goal:** Detect web attacks (XSS, SQLi, etc.) and abnormal traffic.
+
+**Flow:**
 ```
-Browser → HTTP Request → Web Server → Splunk Log Collection → Web Attack Detection
+Browser → HTTP Request → Web Server → Splunk → Web Attack Detection
 ```
 **Reference:** [Splunk HTTP Event Collector](https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector)
 
+---
+
 ### 4. Analyzing SSH Logs
-**Visual:**
+**Goal:** Monitor for brute force and unauthorized SSH access.
+
+**Flow:**
 ```
-User → SSH Login Attempt → SSH Server → Splunk Log Collection → Brute Force/Unauthorized Access Detection
+User → SSH Login Attempt → SSH Server → Splunk → Access Detection
 ```
 **Reference:** [Splunk SSH Security Monitoring](https://www.splunk.com/en_us/blog/security/ssh-security-monitoring.html)
 
+---
+
 ### 5. Analyzing Tunnel Logs
-**Visual:**
+**Goal:** Detect VPN/tunnel misuse and anomalies.
+
+**Flow:**
 ```
-User → VPN/Tunnel Connection → Tunnel Server → Splunk Log Collection → Anomaly Detection
+User → VPN/Tunnel Connection → Tunnel Server → Splunk → Anomaly Detection
 ```
 **Reference:** [Splunk VPN Log Analysis](https://community.splunk.com/t5/Security/VPN-log-analysis/m-p/527840)
 
+---
+
 ### 6. Analyzing SMTP Logs
-**Visual:**
+**Goal:** Identify phishing, spam, and email-based threats.
+
+**Flow:**
 ```
-User → Email Sent/Received → SMTP Server → Splunk Log Collection → Phishing/Spam Detection
+User → Email Sent/Received → SMTP Server → Splunk → Threat Detection
 ```
 **Reference:** [Splunk Email Security Analytics](https://www.splunk.com/en_us/blog/security/email-security-analytics.html)
 
+---
+
 ### 7. Analyzing DHCP Logs
-**Visual:**
+**Goal:** Detect rogue devices and abnormal DHCP activity.
+
+**Flow:**
 ```
-Device → DHCP Request → DHCP Server → Splunk Log Collection → Rogue Device Detection
+Device → DHCP Request → DHCP Server → Splunk → Rogue Device Detection
 ```
 **Reference:** [Splunk DHCP Log Analysis](https://community.splunk.com/t5/Security/DHCP-log-analysis-in-Splunk/m-p/527841)
 
 ---
-Each project folder contains step-by-step instructions and sample queries to help you get started with Splunk-based threat detection for that log type.
+
+## 📦 How to Use
+
+1. Clone this repository.
+2. Follow the instructions in each project markdown file.
+3. Use the provided Splunk queries and diagrams to guide your analysis.
+
+---
+
+## 🌐 More Resources
+
+- [Splunk Security Essentials](https://splunkbase.splunk.com/app/3435/)
+- [Splunk Security Blog](https://www.splunk.com/en_us/blog/security.html)
+
+---
+
+<div align="center">
+	<b>Happy Threat Hunting! 🕵️‍♂️</b>
+</div>
 
 # Splunk SIEM Log Analysis Projects
 
