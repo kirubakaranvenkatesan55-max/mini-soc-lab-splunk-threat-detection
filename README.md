@@ -1,3 +1,60 @@
+# Mini SOC Lab: Splunk Threat Detection Projects
+
+This repository contains 7 hands-on projects for analyzing various network logs using Splunk SIEM. Each project focuses on a different protocol or log type, helping you understand threat detection in a Security Operations Center (SOC) environment.
+
+## Visual Overview of Each Project
+
+### 1. Analyzing DNS Logs
+**Visual:**
+```
+User → DNS Query → DNS Server → Splunk Log Collection → Threat Detection
+```
+**Reference:** [Splunk DNS Analytics](https://www.splunk.com/en_us/blog/security/dns-analytics-for-threat-detection.html)
+
+### 2. Analyzing FTP Logs
+**Visual:**
+```
+User ↔ FTP Server (Login/Upload/Download) → Splunk Log Collection → Suspicious Activity Detection
+```
+**Reference:** [Splunk FTP Log Analysis](https://community.splunk.com/t5/Security/FTP-log-analysis-in-Splunk/m-p/527839)
+
+### 3. Analyzing HTTP Logs
+**Visual:**
+```
+Browser → HTTP Request → Web Server → Splunk Log Collection → Web Attack Detection
+```
+**Reference:** [Splunk HTTP Event Collector](https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector)
+
+### 4. Analyzing SSH Logs
+**Visual:**
+```
+User → SSH Login Attempt → SSH Server → Splunk Log Collection → Brute Force/Unauthorized Access Detection
+```
+**Reference:** [Splunk SSH Security Monitoring](https://www.splunk.com/en_us/blog/security/ssh-security-monitoring.html)
+
+### 5. Analyzing Tunnel Logs
+**Visual:**
+```
+User → VPN/Tunnel Connection → Tunnel Server → Splunk Log Collection → Anomaly Detection
+```
+**Reference:** [Splunk VPN Log Analysis](https://community.splunk.com/t5/Security/VPN-log-analysis/m-p/527840)
+
+### 6. Analyzing SMTP Logs
+**Visual:**
+```
+User → Email Sent/Received → SMTP Server → Splunk Log Collection → Phishing/Spam Detection
+```
+**Reference:** [Splunk Email Security Analytics](https://www.splunk.com/en_us/blog/security/email-security-analytics.html)
+
+### 7. Analyzing DHCP Logs
+**Visual:**
+```
+Device → DHCP Request → DHCP Server → Splunk Log Collection → Rogue Device Detection
+```
+**Reference:** [Splunk DHCP Log Analysis](https://community.splunk.com/t5/Security/DHCP-log-analysis-in-Splunk/m-p/527841)
+
+---
+Each project folder contains step-by-step instructions and sample queries to help you get started with Splunk-based threat detection for that log type.
 
 # Splunk SIEM Log Analysis Projects
 
